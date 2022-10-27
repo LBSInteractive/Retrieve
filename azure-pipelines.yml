@@ -1,0 +1,156 @@
+# List of branches listenings to pushes
+trigger:
+  branches:
+    include:
+    - master
+    - develop
+    - feature/*
+    - release/*
+
+# Executing pipeline on pull requests
+pr:
+  branches:
+    include:
+      - '*'
+
+pool:
+  vmImage: ubuntu-latest
+
+# Variables being defined before, only to facilitate reading of the yaml
+variables:
+- group: 'EsKucha'
+- name: isFeature
+  value: $[startsWith(variables['Build.SourceBranch'], 'refs/heads/feature')]
+- name: isDevelop
+  value: $[eq(variables['Build.SourceBranch'], 'refs/heads/develop')]
+- name: isRelease
+  value: $[startsWith(variables['Build.SourceBranch'], 'refs/heads/release')]
+- name: isMaster
+  value: $[eq(variables['Build.SourceBranch'], 'refs/heads/master')]
+
+# each stage has a condition - it will be skipped if the condition is not achieved. The conditions were already calculated before.
+stages:
+
+- stage: QA01_Validate
+  condition: eq(variables.isFeature, true)
+  jobs:
+  - job: QA01_VALIDADE
+    steps:
+    - task: sfdx-orgdev-build-deploy@1
+      displayName: 'QA01 - Validate QA'
+      inputs:
+        type: 'sandbox'
+        privateKeyPath: 'auth-pipelines/server.key.enc'
+        decryptionKey: $(DECRYPTION-KEY-NON-PROD)
+        decryptionIV: $(DECRYPTION-IV-NON-PROD)
+        clientID: $(CLIENT-ID-QA)
+        username: $(USERNAME-QA)
+        checkonly: true
+        manifestFiles: 'manifest/package.xml'
+        preDestructivePath: 'destructive/preDestructiveChanges.xml'
+        postDestructivePath: 'destructive/postDestructiveChanges.xml'
+        anonymousApex: 'scripts/apex/hello.apex'
+
+- stage: QA01_Deploy
+  condition: eq(variables.isDevelop, true)
+  jobs:
+  - job: QA01_DEPLOY
+    steps:
+    - task: sfdx-orgdev-build-deploy@1
+      displayName: 'QA01 - Deploy QA'
+      inputs:
+        type: 'sandbox'
+        privateKeyPath: 'auth-pipelines/server.key.enc'
+        decryptionKey: $(DECRYPTION-KEY-NON-PROD)
+        decryptionIV: $(DECRYPTION-IV-NON-PROD)
+        clientID: $(CLIENT-ID-QA)
+        username: $(USERNAME-QA)
+        checkonly: false
+        manifestFiles: 'manifest/package.xml'
+        preDestructivePath: 'destructive/preDestructiveChanges.xml'
+        postDestructivePath: 'destructive/postDestructiveChanges.xml'
+        anonymousApex: 'scripts/apex/hello.apex'
+
+- stage: UAT01_VALIDADE
+  condition: eq(variables.isRelease, true)
+  jobs:
+  - job: UAT01_UAT_VALIDATE_DEPLOY
+    steps:
+    - task: sfdx-orgdev-build-deploy@1
+      displayName: 'UAT01 - Validate UAT'
+      inputs:
+        type: 'sandbox'
+        privateKeyPath: 'auth-pipelines/server.key.enc'
+        decryptionKey: $(DECRYPTION-KEY-NON-PROD)
+        decryptionIV: $(DECRYPTION-IV-NON-PROD)
+        clientID: $(CLIENT-ID-UAT)
+        username: $(USERNAME-UAT)
+        checkonly: true
+        manifestFiles: 'manifest/package.xml'
+        preDestructivePath: 'destructive/preDestructiveChanges.xml'
+        postDestructivePath: 'destructive/postDestructiveChanges.xml'
+        anonymousApex: 'scripts/apex/hello.apex'
+
+- stage: UAT01_DEPLOY
+  dependsOn:
+    - UAT01_VALIDADE
+  condition: succeeded('UAT01_VALIDADE')
+  jobs:
+  - job: UAT01_DEPLOY
+    steps:
+    - task: sfdx-orgdev-build-deploy@1
+      displayName: 'UAT01 - Deploy UAT'
+      inputs:
+        type: 'sandbox'
+        privateKeyPath: 'auth-pipelines/server.key.enc'
+        decryptionKey: $(DECRYPTION-KEY-NON-PROD)
+        decryptionIV: $(DECRYPTION-IV-NON-PROD)
+        clientID: $(CLIENT-ID-UAT)
+        username: $(USERNAME-UAT)
+        checkonly: false
+        manifestFiles: 'manifest/package.xml'
+        preDestructivePath: 'destructive/preDestructiveChanges.xml'
+        postDestructivePath: 'destructive/postDestructiveChanges.xml'
+        anonymousApex: 'scripts/apex/hello.apex'
+
+- stage: PROD_VALIDADE
+  condition: eq(variables.isMaster, true)
+  jobs:
+  - job: PROD_PROD_VALIDATE_DEPLOY
+    steps:
+    - task: sfdx-orgdev-build-deploy@1
+      displayName: 'PROD - Validate PROD'
+      inputs:
+        type: 'production'
+        privateKeyPath: 'auth-pipelines/serverprod.key.enc'
+        decryptionKey: $(DECRYPTION-KEY-PROD)
+        decryptionIV: $(DECRYPTION-IV-PROD)
+        clientID: $(CLIENT-ID-PROD)
+        username: $(USERNAME-PROD)
+        checkonly: true
+        manifestFiles: 'manifest/package.xml'
+        preDestructivePath: 'destructive/preDestructiveChanges.xml'
+        postDestructivePath: 'destructive/postDestructiveChanges.xml'
+        anonymousApex: 'scripts/apex/hello.apex'
+
+- stage: PROD_DEPLOY
+  dependsOn:
+    - PROD_VALIDADE
+  condition: succeeded('PROD_VALIDADE')
+  jobs:
+  - job: PROD_DEPLOY
+    steps:
+    - task: sfdx-orgdev-build-deploy@1
+      displayName: 'PROD - Deploy PROD'
+      inputs:
+        type: 'production'
+        privateKeyPath: 'auth-pipelines/serverprod.key.enc'
+        decryptionKey: $(DECRYPTION-KEY-PROD)
+        decryptionIV: $(DECRYPTION-IV-PROD)
+        clientID: $(CLIENT-ID-PROD)
+        username: $(USERNAME-PROD)
+        checkonly: false
+        manifestFiles: 'manifest/package.xml'
+        preDestructivePath: 'destructive/preDestructiveChanges.xml'
+        postDestructivePath: 'destructive/postDestructiveChanges.xml'
+        anonymousApex: 'scripts/apex/hello.apex'

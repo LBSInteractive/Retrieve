@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Confirmación De Consignación</name>
+    <style>freeForm</style>
+    <subject>Confirmación De Consignación</subject>
+    <textOnly>Hola {!Case.Account},
+
+
+
+
+
+
+Te queremos contar que tu solicitud de devolución, de la transacción:
+
+Fecha
+
+Valor
+
+Establecimiento
+
+XXXX
+
+XXXXX
+
+XXXX
+
+La hemos tramitado de manera satisfactoria y te compartimos los datos de la consignación realizada:
+
+Valor devolución
+
+Costo Bancario
+
+Total consignado
+
+XXXXX
+
+XXXX
+
+XXXX
+
+Agradecemos tu información que es fuente importante para el mejoramiento continuo de nuestro servicio y te presentamos nuestras disculpas por las molestias que te ocasionamos. Para Alkosto / K-tronix es muy importante seguir contando contigo como nuestro cliente.
+
+Estamos atentos a escucharte a través de los canales dispuestos para ti.
+
+Anexos
+
+Copia de la consignación
+
+
+
+
+
+
+Cordialmente,
+
+Equipo Servicio al cliente
+
+ALKOSTO - K-TRONIX</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Correo electrónico</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Phone</fullName>
+        <default>false</default>
+        <label>Teléfono</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Web</fullName>
+        <default>false</default>
+        <label>Web</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Redes Sociales</fullName>
+        <default>false</default>
+        <label>Redes Sociales</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Twitter</fullName>
+        <default>false</default>
+        <label>Twitter</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Portal</fullName>
+        <default>false</default>
+        <label>Portal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SIC Demanda</fullName>
+        <default>false</default>
+        <label>SIC Demanda</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SIC Facilita</fullName>
+        <default>false</default>
+        <label>SIC Facilita</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Whatsapp</fullName>
+        <default>false</default>
+        <label>Whatsapp</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Escrito</fullName>
+        <default>false</default>
+        <label>Escrito</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Presencial</fullName>
+        <default>false</default>
+        <label>Presencial</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Devuelve tu pedido</fullName>
+        <default>false</default>
+        <label>Devuelve tu pedido</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Outbound</fullName>
+        <default>false</default>
+        <label>Outbound</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PAK</fullName>
+        <default>false</default>
+        <label>PAK</label>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Factura Electrónica no Aplica Serial BA</name>
+    <style>freeForm</style>
+    <subject>Factura Electrónica no Aplica Serial</subject>
+    <textOnly>Hola {!Case.Account},
+
+
+
+Dando respuesta a tu solicitud de factura electrónica, nos permitimos informar que no es posible entregar dicho documento ya que para los artículos serializados como en tu caso el equipo celular xxxxxx con IMEI solo permite re facturar el mismo día.
+
+De acuerdo a lo anterior y teniendo en cuenta que la compra fue el (día) de (mes) de (año) tu solicitud no es procedente.
+
+Recuerda que estamos atentos a escucharte a través de nuestras líneas de atención al cliente.
+
+Para Alkosto es muy importante seguir contando con usted como nuestro cliente.
+
+
+
+Cordialmente,
+
+Equipo Servicio al cliente
+
+ALKOSTO – K-TRONIX</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

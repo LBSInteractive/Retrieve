@@ -1,0 +1,71 @@
+<messaging:emailTemplate subject="Si Aplica Reversión de Cupo" recipientType="User" relatedToType="Case">
+<messaging:htmlEmailBody > 
+<html>
+<head>
+    <style type="text/css">
+          table {
+                border-collapse: collapse;
+                border-spacing: 0;
+                margin: 0;
+                padding: 0;
+                border: 0;
+          }
+     </style>
+</head>
+      <body>
+        <style type="text/css">
+          table {
+                border-collapse: collapse;
+                border-spacing: 0;
+                margin: 0;
+                padding: 0;
+                border: 0;
+          }
+     </style>
+           <apex:image id="header" value="https://41k0st0--dev--c.documentforce.com/servlet/servlet.ImageServer?id=015010000005jrg&ampoid=00D010000008qp3&amplastMod=1652272683000"/>
+
+        <font face="Times New Roman" size="2">
+          <p><b>Hola @{!relatedto.Account.Name},</b></p>
+          <p><b>Agradecemos el tiempo que te has tomado para informarnos tu caso acerca de xxxxxxxxxxx xx xxxxxxx, ya lo hemos gestionado, y en consecuencia hemos enviado la solicitud de ajuste de reversión a la red bancaria XXXXXXX  el día (dia) de (mes) de 20XX; te compartimos los datos de la transacción:</b></p>
+          <table width="498" style="width:373.7pt">
+ <tbody><tr style="height:20.2pt">
+  <td style="background:#FF6633; padding:.75pt .75pt .75pt .75pt; height:20.2pt">
+  <p align="center" style="margin-right:0cm; margin-left:0cm; font-size:11pt; font-family:Calibri, sans-serif; text-align:center"><strong><span lang="ES-CO" style="font-size:12.0pt; color:white">FECHA</span></strong><strong><span lang="ES-CO" style="font-family:&quot;Calibri&quot;,sans-serif; color:white"></span></strong> </p>
+  </td>
+  <td style="background:#FF6633; padding:.75pt .75pt .75pt .75pt; height:20.2pt">
+  <p align="center" style="margin-right:0cm; margin-left:0cm; font-size:11pt; font-family:Calibri, sans-serif; text-align:center"><strong><span lang="ES-CO" style="font-size:12.0pt; color:white">VALOR</span></strong><strong><span lang="ES-CO" style="font-family:&quot;Calibri&quot;,sans-serif; color:white"></span></strong> </p>
+  </td>
+  <td style="background:#FF6633; padding:.75pt .75pt .75pt .75pt; height:20.2pt">
+  <p align="center" style="margin-right:0cm; margin-left:0cm; font-size:11pt; font-family:Calibri, sans-serif; text-align:center"><strong><span lang="ES-CO" style="font-size:12.0pt; color:white">AUTORIZACIÓN</span></strong><strong><span lang="ES-CO" style="font-family:&quot;Calibri&quot;,sans-serif; color:white"></span></strong> </p>
+  </td>
+  <td style="background:#FF6633; padding:.75pt .75pt .75pt .75pt; height:20.2pt">
+  <p align="center" style="margin-right:0cm; margin-left:0cm; font-size:11pt; font-family:Calibri, sans-serif; text-align:center"><strong><span lang="ES-CO" style="font-size:12.0pt; color:white">ESTABLECIMIENTO</span></strong><strong><span lang="ES-CO" style="font-family:&quot;Calibri&quot;,sans-serif; color:white"></span></strong> </p>
+  </td>
+ </tr>
+ <tr style="height:20.2pt">
+  <td style="padding:.75pt .75pt .75pt .75pt; height:20.2pt">
+  <p align="center" style="margin:0cm 0cm 8pt; line-height:107%; font-size:11pt; font-family:Calibri, sans-serif; margin-right:0cm; margin-left:0cm; text-align:center"><br/> </p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt; height:20.2pt">
+  <p align="center" style="margin:0cm 0cm 8pt; line-height:107%; font-size:11pt; font-family:Calibri, sans-serif; margin-right:0cm; margin-left:0cm; text-align:center"><br/> </p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt; height:20.2pt">
+  <p align="center" style="margin:0cm 0cm 8pt; line-height:107%; font-size:11pt; font-family:Calibri, sans-serif; margin-right:0cm; margin-left:0cm; text-align:center"><br/> </p>
+  </td>
+  <td style="padding:.75pt .75pt .75pt .75pt; height:20.2pt">
+  <p align="center" style="margin:0cm 0cm 8pt; line-height:107%; font-size:11pt; font-family:Calibri, sans-serif; margin-right:0cm; margin-left:0cm; text-align:center"><br/> </p>
+  </td>
+ </tr></tbody></table>
+          <p><b>Ten en cuenta que a partir de la fecha de solicitud, las entidades financieras toman entre 8 y 15 dias hábiles para aplicar el ajuste en la cuenta bancaria o tarjeta.</b></p>
+          <p><b>Si en algún momento presentas alguna inconsistencia, el titular de la tarjeta o la cuenta, deberá comunicarse directamente con la entidad financiera indicando los datos de la transacción  que se encuentran en el cuadro anterior.</b></p>
+
+          <p><b>Recuerda que estamos siempre a tu disposición para escucharte en los canales que hemos dispuesto para ti.</b></p>
+          
+          <p><b>Cordialmente,</b></p>
+          <p><b>Equipo Servicio al cliente </b></p>
+          <p><b>ALKOSTO - K-TRONIX</b></p>
+        </font>
+      </body>
+</html>
+</messaging:htmlEmailBody> 
+</messaging:emailTemplate>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+    <custom>true</custom>
+    <layoutAssignments>
+        <layout>WorkOrder-ALK_Work_Order_Instalaciones_Aliados</layout>
+        <recordType>WorkOrder.ALK_Instalaciones</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkOrder-ALK_Work_Order_Visita_Garantia_Instalacion_Aliados</layout>
+        <recordType>WorkOrder.ALK_Visita_Garantia_Instalacion</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkOrder-ALK_Work_Order_Visita_Garantia_Producto_Aliados</layout>
+        <recordType>WorkOrder.ALK_Visita_Garantia_Producto</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ServiceTerritoryMember-ALK_Service_Territory_Member</layout>
+    </layoutAssignments> 
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>ServiceAppointment.ALK_Citas_Servicio</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities> 
+    <userLicense>Partner Community</userLicense>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>EnableNotifications</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>SelectFilesFromSalesforce</name>
+    </userPermissions>
+</Profile>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Protocolo de Bioseguridad BA</name>
+    <style>freeForm</style>
+    <subject>Protocolo de Bioseguridad</subject>
+    <textOnly>Hola {!Case.Account},
+
+
+
+
+
+Agradecemos que te tomes el tiempo de contarnos tu caso referente a los protocolos de bioseguridad que estamos manejando en nuestras tiendas, para nosotros es muy valiosa la experiencia que vives y por esta razón es de suma importancia la información que nos brindas.
+
+Te contamos que desde el inicio de esta pandemia nos hemos preocupado por tomar todas las medidas necesarias para que te sientas tranquilo en nuestras tiendas y siguiendo con los protocolos de bioseguridad decretados por el Gobierno Nacional, realizamos la toma de temperatura al ingresar a nuestras tiendas. Hemos realizado la consulta con la (Sociedad Colombiana de higienistas ocupacionales) SCHO, los cuales nos indican:
+
+• El uso del termómetro no genera ningún daño para la salud.
+
+• La toma de la temperatura se debe realizar en la cabeza o en el cuello esto con el fin de tener certeza de la temperatura corporal al momento del ingreso a la tienda.
+
+Lamentamos el inconveniente sucedido en nuestras instalaciones, y te compartimos el documento de la SCHO donde puedes consultar dicha información.
+
+Queremos recordarte que estamos siempre a tu disposición para escucharte en los canales que hemos dispuesto para ti. Para nosotros es muy importante seguir contando contigo siempre.
+
+
+
+
+
+Cordialmente,
+
+Equipo Servicio al cliente
+
+ALKOSTO – K-TRONIX</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

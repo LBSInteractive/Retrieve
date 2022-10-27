@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_INFORMACION</fullName>
+    <active>true</active>
+    <businessProcess>INFORMACIONES</businessProcess>
+    <compactLayoutAssignment>ALK_CASOS_CL</compactLayoutAssignment>
+    <label>INFORMACIÓN</label>
+    <picklistValues>
+        <picklist>ALK_Case_Reopen_Reason__c</picklist>
+        <values>
+            <fullName>Caso mal cerrado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No esta deacuerdo con la respuesta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Producto vuelve a presentar falla</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solicita la misma informacion</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ALK_Clase__c</picklist>
+        <values>
+            <fullName>DOCUMENTOS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Devuelve tu pedido</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escrito</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Presencial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Redes Sociales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIC Demanda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIC Facilita</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Twitter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Whatsapp</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>Critica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Complex functionality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instructions not clear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User didn%27t attend training</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>COMPAÑÍA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COMPRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENTREGA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POSVENTA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PROCESO PAGO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRODUCTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRODUCTOS INTANGIBLES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RECOGIDA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

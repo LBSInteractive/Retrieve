@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Factura Electrónica no Aplica Tarjeta de Crédito BA</name>
+    <style>freeForm</style>
+    <subject>Factura Electrónica no Aplica Tarjeta de Crédito</subject>
+    <textOnly>Hola {!Case.Account},
+
+
+
+
+Dando respuesta a tu solicitud de factura electrónica, nos permitimos informar que no es posible realizar entrega de dicho documento, debido a que no se puede re facturar planes de financiamiento.
+
+De acuerdo a lo anterior y teniendo en cuenta que el medio de pago fue con tarjeta de crédito xxxxxx tu solicitud no es procedente.
+
+Recuerda que estamos atentos a escucharte a través de nuestras líneas de atención al cliente.
+
+Para Alkosto es muy importante seguir contándote como nuestro cliente
+
+
+
+
+Cordialmente,
+
+Equipo Servicio al cliente
+
+ALKOSTO – K-TRONIX</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

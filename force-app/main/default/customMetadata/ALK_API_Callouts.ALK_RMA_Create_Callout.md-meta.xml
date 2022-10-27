@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>RMA Create Callout</label>
+    <protected>false</protected>
+    <values>
+        <field>ALK_Client_ID__c</field>
+        <value xsi:type="xsd:string">dedffde14db146c09756a0ff83e89eee</value>
+    </values>
+    <values>
+        <field>ALK_Client_Secret__c</field>
+        <value xsi:type="xsd:string">8F7A0f58Cb0E4e6b95ccfa68B1246a58</value>
+    </values>
+    <values>
+        <field>ALK_Method__c</field>
+        <value xsi:type="xsd:string">POST</value>
+    </values>
+    <values>
+        <field>ALK_Path__c</field>
+        <value xsi:type="xsd:string">ALK_Callout_RMA/api/v1/rma</value>
+    </values>
+</CustomMetadata>

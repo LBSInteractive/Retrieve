@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>ALK_Share_PQR_Tec_Cambio_Devoluciones</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Compartir PQR con Tec Cambio y Devoluciones</label>
+        <sharedTo>
+            <group>SHARE_TEC_CAMBIOS_DEVOLUCIONES</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>QUEJA,SOLICITUD</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

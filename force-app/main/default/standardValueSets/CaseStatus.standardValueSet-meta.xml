@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>New</fullName>
+        <default>true</default>
+        <label>Nuevo</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>En Progreso</fullName>
+        <default>false</default>
+        <label>En Progreso</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>En espera del cliente</fullName>
+        <default>false</default>
+        <label>En espera del cliente</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>En espera del Proveedor</fullName>
+        <default>false</default>
+        <label>En espera del Proveedor</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed</fullName>
+        <default>false</default>
+        <label>Cerrado</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Abandono Cliente</fullName>
+        <default>false</default>
+        <label>Abandono Cliente</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Almacenado en Tienda</fullName>
+        <default>false</default>
+        <label>Almacenado en Tienda</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Recepción Tienda</fullName>
+        <default>false</default>
+        <label>Recepción Tienda</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Cambio Aprobado</fullName>
+        <default>false</default>
+        <label>Cambio Aprobado</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Cambio Evitado Gestión Técnico</fullName>
+        <default>false</default>
+        <label>Cambio Evitado Gestión Técnico</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Solución al Cliente</fullName>
+        <default>false</default>
+        <label>Solución al Cliente</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Entregado a Proveedor</fullName>
+        <default>false</default>
+        <label>Entregado a Proveedor</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Novedad</fullName>
+        <default>false</default>
+        <label>Novedad</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>En Transporte</fullName>
+        <default>false</default>
+        <label>En Transporte</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pte. Recolección y/o Visita Marca</fullName>
+        <default>false</default>
+        <label>Pte. Recolección y/o Visita Marca</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Recibido</fullName>
+        <default>false</default>
+        <label>Recibido</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Recolección Programada</fullName>
+        <default>false</default>
+        <label>Recolección Programada</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Solicitud pendiente de aprobación</fullName>
+        <default>false</default>
+        <label>Solicitud pendiente de aprobación</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Solicitud Aprobada</fullName>
+        <default>false</default>
+        <label>Solicitud Aprobada</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Solicitud con Novedad</fullName>
+        <default>false</default>
+        <label>Solicitud con Novedad</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Solicitud Finalizada con devolución</fullName>
+        <default>false</default>
+        <label>Solicitud Finalizada con devolución</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>No hay solicitudes pendientes</fullName>
+        <default>false</default>
+        <label>No hay solicitudes pendientes</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Disponible en Tienda</fullName>
+        <default>false</default>
+        <label>Disponible en Tienda</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Producto entregado</fullName>
+        <default>false</default>
+        <label>Producto entregado</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Entregado Bono Cambo</fullName>
+        <default>false</default>
+        <label>Entregado Bono Cambo</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Escalado a proveedor</fullName>
+        <default>false</default>
+        <label>Escalado a proveedor</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>En Proceso</fullName>
+        <default>false</default>
+        <label>En Proceso</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Solicitud bono virtual</fullName>
+        <default>false</default>
+        <label>Solicitud bono virtual</label>
+        <closed>false</closed>
+    </standardValue>
+</StandardValueSet>

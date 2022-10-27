@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>Mensajes Automáticos de los estados</name>
+    <publicFolderAccess>ReadWrite</publicFolderAccess>
+    <sharedTo>
+        <role>ALK_CREADORES_CASOS</role>
+        <role>ALK_GESTORES_DE_CASOS</role>
+        <role>ALK_TECNICOS_DE_CAMPO</role>
+        <role>ALK_TECNICOS_DE_SERVICIOS</role>
+    </sharedTo>
+</EmailFolder>

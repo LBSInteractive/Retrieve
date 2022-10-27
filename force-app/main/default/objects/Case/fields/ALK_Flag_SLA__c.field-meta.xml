@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_Flag_SLA__c</fullName>
+    <externalId>false</externalId>
+    <formula>IMAGE(
+				CASE( ALK_Traffic_Lights__c,
+								&quot;Red&quot;, &quot;https://41k0st0--dev--c.documentforce.com/servlet/servlet.FileDownload?file=015010000005mNZ&quot;,
+								&quot;Yellow&quot;, &quot;https://41k0st0--dev--c.documentforce.com/servlet/servlet.FileDownload?file=015010000005mNU&quot;,
+								&quot;Green&quot;,&quot;https://41k0st0--dev--c.documentforce.com/servlet/servlet.FileDownload?file=015010000005mN5&quot;,
+								&quot;https://41k0st0--dev--c.documentforce.com/servlet/servlet.FileDownload?file=015010000005mN5&quot;)
+				     ,&quot;Traffic Light&quot;, 24,24)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Flag SLA</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

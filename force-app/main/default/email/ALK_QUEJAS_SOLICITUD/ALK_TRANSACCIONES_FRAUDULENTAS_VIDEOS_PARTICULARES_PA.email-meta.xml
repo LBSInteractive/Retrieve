@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Transacciones Fraudulentas y Videos a Particulares PA</name>
+    <style>freeForm</style>
+    <subject>Transacciones Fraudulentas y Videos a Particulares</subject>
+    <textOnly>Hola {!Case.Account},
+
+
+
+
+
+
+
+
+Apreciamos que te hayas tomado el tiempo para contarnos tu caso de la compra efectuada en nuestras tiendas (posible fraude), te informamos que por política de privacidad y manejo de la información de conformidad con la Ley 1581 de 2012, no estamos autorizados a compartirte los datos del tercero, (copia de videos, Voucher, o llamadas) en tanto que contienen datos personales o información relacionada con estos se encuentran sometidas a reserva legal, ni es posible reversar ningún tipo de transacción realizada con tarjeta.
+
+Por lo anterior, se acude a la excepción contenida en el inciso 3° del Artículo 32 de la Ley 1755 de 2015, para manifestarte que no puede ALKOSTO S.A. suministrarte la información requerida, salvo que se solicite mediante requerimiento de una autoridad competente en el marco de sus funciones legales con órdenes de policía judicial al funcionario que asigne la Fiscalía.
+
+Es necesario que remitas tu solicitud a la entidad financiera que emitió tu tarjeta o transacción, ellos son quienes te podrán ayudar para procesar tu caso. Así mismo te sugerimos instaurar la denuncia ante la Fiscalía General de la Nación, entidad competente a quien también, en caso de ser necesario le aportaremos la información que requiera.
+
+Recuerda que estamos atentos a escucharte a través de nuestras líneas de atención al cliente.
+
+
+
+
+
+
+
+
+Cordialmente,
+
+Equipo Servicio al cliente
+
+ALKOSTO – K-TRONIX</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

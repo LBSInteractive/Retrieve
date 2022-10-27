@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Account Import Callout</label>
+    <protected>false</protected>
+    <values>
+        <field>ALK_Client_ID__c</field>
+        <value xsi:type="xsd:string">5f7bf7bc0aaa42e4809344e5c870d2ca</value>
+    </values>
+    <values>
+        <field>ALK_Client_Secret__c</field>
+        <value xsi:type="xsd:string">1bCbD6Bf10df40F987A42dE781a58D81</value>
+    </values>
+    <values>
+        <field>ALK_Method__c</field>
+        <value xsi:type="xsd:string">POST</value>
+    </values>
+    <values>
+        <field>ALK_Path__c</field>
+        <value xsi:type="xsd:string">ALK_Callout_Account/api/v1/clients</value>
+    </values>
+</CustomMetadata>
